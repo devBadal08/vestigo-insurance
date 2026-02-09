@@ -67,7 +67,7 @@ export default function SolutionsPage() {
         <div className="relative w-full aspect-[16/9] lg:aspect-[16/7]">
 
             <Image
-            src="/solution2.jpeg"
+            src="/solution4.jpeg"
             alt="Vestigo insurance solutions"
             fill
             priority

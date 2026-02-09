@@ -15,7 +15,7 @@ export default function RiskManagementSection() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D] mb-16"
         >
-          Risk Management & Claims Excellence
+          Risk Assessment
         </motion.h1>
 
         {/* CONTENT GRID */}

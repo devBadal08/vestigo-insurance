@@ -29,7 +29,7 @@ export default function AboutUsPage() {
 
           {/* Background Image */}
           <Image
-            src="/about us.jpeg"
+            src="/about-us1.jpeg"
             alt="Vestigo leadership advisory meeting"
             fill
             priority

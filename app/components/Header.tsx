@@ -133,8 +133,8 @@ const NAV_DATA = [
     icon: <Briefcase size={20} />,
     desc: 'Protection designed for every industry.',
     subLinks: [
-      { name: 'Automotive', href: '/industries/automobile', icon: <FontAwesomeIcon icon={faCar} /> },
-      { name: 'IT & Tech', href: '/industries/it', icon: <FontAwesomeIcon icon={faLaptopCode} /> },
+      { name: 'Automotive', href: '/industries/automotive', icon: <FontAwesomeIcon icon={faCar} /> },
+      { name: 'IT & Tech', href: '/industries/it-tech', icon: <FontAwesomeIcon icon={faLaptopCode} /> },
       { name: 'Engineering', href: '/industries/engineering', icon: <FontAwesomeIcon icon={faCogs} /> },
       { name: 'Hospitality', href: '/industries/hospitality', icon: <FontAwesomeIcon icon={faHotel} /> },
       { name: 'BFSI', href: '/industries/BFSI', icon: <FontAwesomeIcon icon={faLandmark} /> },

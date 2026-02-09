@@ -5,50 +5,45 @@ export default function WhoWeArePage() {
     <section className="bg-white text-slate-700">
 
       {/* ================= HERO ================= */}
-      <div className="relative w-full pt-[86px]">
+        <section className="relative bg-white pt-[110px] pb-20">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
-        {/* Hero Image */}
-        <div className="relative h-[420px] w-full overflow-hidden">
-          <Image
-            src="/who we are.jpeg"
-            alt="Vestigo leadership advisory meeting"
-            fill
-            priority
-            className="object-cover"
-          />
+            {/* LEFT: IMAGE */}
+            <div className="relative w-full h-[260px] sm:h-[340px] lg:h-[420px]
+                            rounded-3xl overflow-hidden shadow-xl">
+            <Image
+                src="/who we are.jpeg"
+                alt="Vestigo leadership advisory meeting"
+                fill
+                priority
+                className="object-cover"
+            />
 
-          {/* Soft professional overlay */}
-          <div className="absolute inset-0 bg-[#1C2A7D]/10" />
-        </div>
+            {/* Soft overlay */}
+            <div className="absolute inset-0 bg-[#1C2A7D]/10" />
+            </div>
 
-        {/* Hero Content */}
-        <div className="relative max-w-7xl mx-auto px-6 -mt-10">
-          <div className="bg-white
-                          border border-slate-200
-                          shadow-xl
-                          rounded-2xl
-                          px-10 py-12
-                          max-w-3xl">
+            {/* RIGHT: INTRO CONTENT */}
+            <div className="bg-white border border-slate-200 shadow-xl
+                            rounded-2xl px-10 py-12">
 
-            <h1 className="text-4xl md:text-5xl
-                           font-extrabold
-                           tracking-tight
-                           text-[#1C2A7D]">
-              Who We Are
+            <h1 className="text-4xl md:text-5xl font-extrabold
+                            tracking-tight text-[#1C2A7D]">
+                Who We Are
             </h1>
 
             <div className="w-20 h-[3px] bg-[#E8D534] mt-4 mb-6 rounded-full" />
 
-            <p className="text-lg leading-[1.7] text-slate-600">
-              Independent advisory shaped by insight.
-              <span className="block mt-2 font-semibold text-[#1C2A7D]">
+            <p className="text-lg leading-[1.8] text-slate-600">
+                Independent advisory shaped by insight.
+                <span className="block mt-2 font-semibold text-[#1C2A7D]">
                 Protection guided by foresight.
-              </span>
+                </span>
             </p>
+            </div>
 
-          </div>
         </div>
-      </div>
+        </section>
 
         {/* ================= CONTENT ================= */}
         <section className="bg-white py-28">
