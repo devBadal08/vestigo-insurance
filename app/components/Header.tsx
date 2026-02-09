@@ -88,42 +88,42 @@ const NAV_DATA = [
     subLinks: [
       { 
     name: 'Risk Assessment', 
-    href: '/solutions/audits&riskassessment', 
+    href: '/solutions/risk-assessment', 
     icon: <FontAwesomeIcon icon={faClipboardCheck} /> 
   },
   { 
     name: 'Claims Management', 
-    href: '/solutions/claimsmanagement', 
+    href: '/solutions/claims-management', 
     icon: <FontAwesomeIcon icon={faHandHoldingHeart} /> 
   },
   { 
     name: 'Commercial Insurance', 
-    href: '/solutions/commercialinsurance', 
+    href: '/solutions/commercial-insurance', 
     icon: <FontAwesomeIcon icon={faBuildingShield} /> 
   },
   { 
     name: 'Employee Benefits', 
-    href: '/solutions/employeebenifits', 
+    href: '/solutions/employee-benefits', 
     icon: <FontAwesomeIcon icon={faUsersGear} /> 
   },
   { 
     name: 'Life Insurance', 
-    href: '/solutions/lifeinsurance', 
+    href: '/solutions/life-insurance', 
     icon: <FontAwesomeIcon icon={faHeartPulse} /> 
   },
   { 
     name: 'Green Energy Insurance', 
-    href: '/solutions/greenXinsurance', 
+    href: '/solutions/green-energy-insurance', 
     icon: <FontAwesomeIcon icon={faLeaf} /> 
   },
   { 
     name: 'Surity Bond', 
-    href: '/solutions/suretybond&creditinsurance', 
+    href: '/solutions/surety-bond', 
     icon: <FontAwesomeIcon icon={faFileContract} /> 
   },
   { 
     name: 'Ability Suite', 
-    href: '/solutions/abilitysuite', 
+    href: '/solutions/ability-suite', 
     icon: <FontAwesomeIcon icon={faGem} /> 
   },],
   },
@@ -231,7 +231,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <div className="hidden lg:flex items-center gap-4">
               <PhoneCall size={16} className="text-slate-400" />
-              <Link href="/contact" className="bg-[#1C2A7D] text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-[#2F6BFF]">CONTACT</Link>
+              <Link href="/contact-us" className="bg-[#1C2A7D] text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-[#2F6BFF]">CONTACT</Link>
             </div>
             <button onClick={() => setIsMobileOpen(true)} className="lg:hidden p-2 rounded-lg bg-slate-100 hover:bg-slate-200 transition">
               <Menu size={20} className="text-[#1C2A7D]" />
@@ -290,7 +290,7 @@ export default function Header() {
 
             <div className="p-6 bg-slate-50">
               <Link 
-                href="/contacts" 
+                href="/contact-us" 
                 onClick={() => setIsMobileOpen(false)}
                 className="w-full bg-[#1C2A7D] text-white py-4 rounded-xl font-bold flex items-center justify-center gap-2"
               >

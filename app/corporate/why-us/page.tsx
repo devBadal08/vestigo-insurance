@@ -9,7 +9,7 @@ export default function WhyUsPage() {
           {/* LEFT – ILLUSTRATION */}
           <div className="relative w-full h-[420px] lg:h-[520px]">
             <Image
-              src="/why-us-illustration.png" // add image in public folder
+              src="/why us.png" // add image in public folder
               alt="Strategic risk advisory discussion"
               fill
               className="object-contain"
