@@ -11,23 +11,41 @@ export default function HomePage() {
   return (
     <main>
       {/* ================= ABOUT HERO (INSURANCE STYLE) ================= */}
-      <section className="relative">
-        {/* BACKGROUND IMAGE */}
-        <div className="relative h-[420px] sm:h-[520px] lg:h-[500px]">
+      <section className="relative pt-[88px]">
+        {/* HERO IMAGE */}
+        <div
+          className="
+      relative
+      w-full
+      sm:h-[520px]
+      lg:h-[480px]
+      bg-[#F8FAFC]
+    "
+        >
+          <Image
+            src="/home1.jpeg"
+            alt="Insurance solutions"
+            priority
+            width={1200}
+            height={1600}
+            className="
+        w-full
+        h-auto
+        object-contain
+        sm:hidden
+      "
+          />
+
           <Image
             src="/home1.jpeg"
             alt="Insurance solutions"
             fill
             priority
-            className="object-cover object-center"
-          />
-
-          {/* Overlay */}
-          <div
-            className="absolute inset-0 bg-gradient-to-r
-                          from-[#1C2A7D]/75
-                          via-[#1C2A7D]/45
-                          to-transparent"
+            className="
+        hidden sm:block
+        object-cover
+        object-[center_65%]
+      "
           />
         </div>
 
@@ -39,21 +57,21 @@ export default function HomePage() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="
-              bg-white
-              rounded-[28px]
-              shadow-[0_35px_80px_rgba(28,42,125,0.30)]
-              px-10 py-12
-              max-w-3xl
-              -mt-28
-            "
+    bg-white
+    rounded-2xl sm:rounded-[28px]
+    shadow-[0_35px_80px_rgba(28,42,125,0.30)]
+    px-5 py-6 sm:px-10 sm:py-12
+    max-w-3xl
+    mt-6 sm:-mt-16
+  "
           >
-            <h1 className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D]">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#1C2A7D]">
               Vestigo Insurance Advisors
             </h1>
 
-            <div className="w-20 h-[3px] bg-[#E8D534] mt-5 mb-6 rounded-full" />
+            <div className="w-16 sm:w-20 h-[3px] bg-[#E8D534] mt-4 mb-4 sm:mt-5 sm:mb-6 rounded-full" />
 
-            <p className="text-lg text-slate-600 leading-[1.85]">
+            <p className="text-sm sm:text-lg text-slate-600 leading-relaxed">
               Simplifying Insurance, Amplifying Trust
             </p>
           </motion.div>
