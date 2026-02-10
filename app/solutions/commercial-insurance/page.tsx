@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 export default function CommercialInsurancePage() {
   return (
     <main className="bg-white">
-
       {/* ================= HEADER ================= */}
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-10">
         <motion.h1
@@ -23,7 +22,6 @@ export default function CommercialInsurancePage() {
       {/* ================= MAIN SECTION ================= */}
       <section className="max-w-6xl mx-auto px-6 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-
           {/* LEFT: FEATURED CONTENT CARD */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -69,7 +67,7 @@ export default function CommercialInsurancePage() {
             {/* IMAGE */}
             <div className="relative w-full h-[280px] sm:h-[340px] lg:h-[380px] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/commercial-insurance.jpeg"
+                src="/commercial.jpeg"
                 alt="Commercial insurance advisory"
                 fill
                 className="object-cover"
@@ -110,10 +108,8 @@ export default function CommercialInsurancePage() {
               </div>
             </div>
           </motion.div>
-
         </div>
       </section>
-
     </main>
   );
 }

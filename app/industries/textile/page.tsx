@@ -2,6 +2,13 @@
 
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import {
+  Package,
+  Factory,
+  ShieldCheck,
+  Truck,
+  AlertTriangle,
+} from "lucide-react";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -12,7 +19,7 @@ const fadeUp: Variants = {
   },
 };
 
-export default function EcommercePage() {
+export default function TextilePage() {
   return (
     <main className="bg-white">
 
@@ -27,7 +34,7 @@ export default function EcommercePage() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D]"
           >
-            Revolutionizing Retail Delivery
+            Textile & Apparel Insurance Solutions
           </motion.h1>
 
           <motion.p
@@ -38,7 +45,7 @@ export default function EcommercePage() {
             transition={{ delay: 0.1 }}
             className="mt-3 text-2xl font-semibold text-[#1C2A7D]"
           >
-            The Speed Commerce Era
+            Weaving Sustainable Fashion
           </motion.p>
 
           <motion.div
@@ -57,9 +64,9 @@ export default function EcommercePage() {
             transition={{ delay: 0.2 }}
             className="max-w-4xl text-[17px] leading-[1.85] text-slate-600"
           >
-            10-minute delivery models, dark store networks, hyperlocal fulfilment,
-            AI-powered personalization, social commerce explosion, and seamless
-            omnichannel experiences are redefining consumer expectations globally.
+            Fast fashion evolution, sustainable material innovation, automation
+            in manufacturing, D2C models, circular economy adoption, and ethical
+            sourcing are reshaping the global textile industry.
           </motion.p>
 
         </div>
@@ -74,7 +81,7 @@ export default function EcommercePage() {
           viewport={{ once: true }}
           className="text-3xl font-bold text-[#1C2A7D] mb-12"
         >
-          Digital Commerce Risks
+          Textile Industry Risks
         </motion.h2>
 
         <motion.div
@@ -86,28 +93,28 @@ export default function EcommercePage() {
         >
           {[
             {
-              title: "Cyber & Data Breaches",
-              desc: "Customer data theft, payment fraud, ransomware, GDPR violations.",
+              title: "Fire & Property Damage",
+              desc: "Fabric combustibility, machinery fires, warehouse blazes, inventory loss.",
+            },
+            {
+              title: "Supply Chain Disruption",
+              desc: "Raw material shortages, shipping delays, vendor failures.",
             },
             {
               title: "Product Liability",
-              desc: "Defective products, counterfeit goods, safety violations, recall costs.",
-            },
-            {
-              title: "Logistics & Transit",
-              desc: "Last-mile delivery failures, goods damage, theft, vehicle accidents.",
+              desc: "Fabric defects, chemical reactions, safety violations, recalls.",
             },
             {
               title: "Business Interruption",
-              desc: "Platform downtime, server crashes, payment gateway failures, peak season disruptions.",
+              desc: "Production stoppages, seasonal demand shifts, order cancellations.",
             },
             {
-              title: "Professional Indemnity",
-              desc: "Mis-selling, wrong product delivery, pricing errors, service failures.",
+              title: "Environmental Compliance",
+              desc: "Dye discharge, water pollution, waste management, chemical regulations.",
             },
             {
-              title: "Warehouse Operations",
-              desc: "Fire, inventory loss, equipment breakdown, worker injuries.",
+              title: "Labor & Employment",
+              desc: "Worker safety, factory conditions, compliance audits, wage disputes.",
             },
           ].map((item) => (
             <motion.div
@@ -132,76 +139,89 @@ export default function EcommercePage() {
       </section>
 
       {/* ================= PROTECTION ================= */}
-        <section className="bg-[#F7F8FC] py-24">
+      <section className="bg-[#F7F8FC] py-24">
         <div className="max-w-6xl mx-auto px-6">
 
-            <motion.h2
+          <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#1C2A7D] mb-14"
-            >
-            E-Commerce Protection Suite
-            </motion.h2>
+          >
+            Textile Manufacturing Protection
+          </motion.h2>
 
-            <motion.div
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-10"
+          >
             {[
-                {
-                title: "Cyber Liability & Data Breach",
-                desc: "Protection against customer data theft, payment fraud, ransomware attacks, and regulatory penalties.",
-                },
-                {
-                title: "Product Liability Insurance",
-                desc: "Covers defective products, counterfeit goods, safety issues, recalls, and consumer injury claims.",
-                },
-                {
-                title: "Marine & Transit Coverage",
-                desc: "Safeguards goods in transit against loss, theft, damage, and logistics-related disruptions.",
-                },
-                {
-                title: "Business Interruption Insurance",
-                desc: "Compensation for revenue loss due to platform downtime, server failures, or operational shutdowns.",
-                },
-                {
-                title: "Professional Indemnity",
-                desc: "Protection from claims arising due to mis-selling, pricing errors, service failures, or disputes.",
-                },
-                {
+              {
                 title: "Property & Stock Insurance",
-                desc: "Covers warehouses, inventory, dark stores, and fulfilment centres against fire, theft, and damage.",
-                },
-            ].map((item) => (
+                desc: "Protection for factories, warehouses, raw materials, and finished goods.",
+                icon: Package,
+              },
+              {
+                title: "Business Interruption Coverage",
+                desc: "Income protection during shutdowns, fire damage, or supply delays.",
+                icon: Factory,
+              },
+              {
+                title: "Product Liability Insurance",
+                desc: "Covers claims related to defective garments, safety issues, and recalls.",
+                icon: AlertTriangle,
+              },
+              {
+                title: "Marine & Transit Insurance",
+                desc: "Secures goods during international shipping and inland transit.",
+                icon: Truck,
+              },
+              {
+                title: "Environmental Liability",
+                desc: "Coverage for pollution incidents, chemical spills, and regulatory fines.",
+                icon: ShieldCheck,
+              },
+            ].map((item, index) => (
                 <motion.div
-                key={item.title}
-                variants={fadeUp}
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 220, damping: 18 }}
-                className="bg-white rounded-2xl px-7 py-7
-                            border border-[#1C2A7D]/10
-                            shadow-[0_14px_35px_rgba(28,42,125,0.12)]
-                            hover:shadow-[0_24px_55px_rgba(28,42,125,0.2)]
-                            transition"
+                    key={item.title}
+                    variants={fadeUp}
+                    whileHover={{ y: -6 }}
+                    transition={{ type: "spring", stiffness: 220, damping: 18 }}
+                    className={`
+                    bg-white rounded-2xl p-7
+                    border border-[#1C2A7D]/10
+                    shadow-[0_14px_35px_rgba(28,42,125,0.14)]
+                    hover:shadow-[0_28px_55px_rgba(28,42,125,0.22)]
+                    transition
+                    ${
+                        index < 3
+                        ? "lg:col-span-2"     // first row → 3 cards
+                        : "lg:col-span-3"     // second row → 2 centered cards
+                    }
+                    `}
                 >
-                <h3 className="font-semibold text-[#1C2A7D] text-lg mb-2">
-                    {item.title}
+                <div className="w-12 h-12 mx-auto flex items-center justify-center
+                    rounded-xl bg-[#E8D534]/20 mb-4">
+                  <item.icon className="w-6 h-6 text-[#1C2A7D]" />
+                </div>
+
+                <h3 className="text-lg font-semibold text-[#1C2A7D] mb-2 text-center">
+                  {item.title}
                 </h3>
 
-                <p className="text-sm text-slate-600 leading-relaxed">
-                    {item.desc}
+                <p className="text-sm text-slate-600 leading-relaxed text-center">
+                  {item.desc}
                 </p>
-                </motion.div>
+              </motion.div>
             ))}
-            </motion.div>
+          </motion.div>
 
         </div>
-        </section>
+      </section>
 
     </main>
   );

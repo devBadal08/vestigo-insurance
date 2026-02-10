@@ -4,10 +4,8 @@ export default function OurTeamPage() {
   return (
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20">
-
         {/* ================= TEAM INTRO ================= */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
           {/* LEFT CONTENT */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-[#1C2A7D] mb-6">
@@ -26,11 +24,11 @@ export default function OurTeamPage() {
                 Our Commitment
               </h3>
               <p className="text-slate-700 leading-relaxed">
-                We take the time to understand each client’s business, risks, and
-                expectations, ensuring our advice is thoughtful, practical, and
-                dependable. Our teams remain engaged across the entire insurance
-                journey, ensuring continuity, clarity, and support not just at
-                placement, but through claims and critical moments.
+                We take the time to understand each client’s business, risks,
+                and expectations, ensuring our advice is thoughtful, practical,
+                and dependable. Our teams remain engaged across the entire
+                insurance journey, ensuring continuity, clarity, and support not
+                just at placement, but through claims and critical moments.
               </p>
             </div>
 
@@ -52,16 +50,16 @@ export default function OurTeamPage() {
 
             {/* QUOTE */}
             <blockquote className="mt-12 border-l-4 border-[#1C2A7D] pl-6 text-slate-600 italic">
-              “Clients rely on Vestigo because we understand that true partnership
-              means being there when it matters—with expertise, integrity, and
-              genuine care.”
+              “Clients rely on Vestigo because we understand that true
+              partnership means being there when it matters—with expertise,
+              integrity, and genuine care.”
             </blockquote>
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative w-full h-[520px]">
             <Image
-              src="/our-team-illustration.png"
+              src="/our-team.jpeg"
               alt="Vestigo advisory team discussion"
               fill
               className="object-contain"
@@ -106,11 +104,11 @@ export default function OurTeamPage() {
               Leadership Philosophy
             </h3>
             <p className="text-slate-700 text-lg">
-              Experienced in judgment. Disciplined in execution. Committed to standing with clients.
+              Experienced in judgment. Disciplined in execution. Committed to
+              standing with clients.
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );
@@ -131,12 +129,8 @@ function Principle({
         ✓
       </div>
       <div>
-        <h4 className="text-lg font-semibold text-[#1C2A7D] mb-1">
-          {title}
-        </h4>
-        <p className="text-slate-600 leading-relaxed">
-          {description}
-        </p>
+        <h4 className="text-lg font-semibold text-[#1C2A7D] mb-1">{title}</h4>
+        <p className="text-slate-600 leading-relaxed">{description}</p>
       </div>
     </div>
   );
@@ -155,17 +149,11 @@ function LeaderCard({
 }) {
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-8 shadow-sm hover:shadow-md transition flex flex-col h-full">
-      <h3 className="text-2xl font-bold text-[#1C2A7D] mb-1">
-        {name}
-      </h3>
+      <h3 className="text-2xl font-bold text-[#1C2A7D] mb-1">{name}</h3>
 
-      <p className="text-sm font-semibold text-slate-600 mb-2">
-        {role}
-      </p>
+      <p className="text-sm font-semibold text-slate-600 mb-2">{role}</p>
 
-      <p className="text-sm text-[#1C2A7D] font-medium mb-6">
-        {experience}
-      </p>
+      <p className="text-sm text-[#1C2A7D] font-medium mb-6">{experience}</p>
 
       <div className="flex-1 space-y-4 text-slate-700 leading-relaxed">
         {description.map((para, index) => (

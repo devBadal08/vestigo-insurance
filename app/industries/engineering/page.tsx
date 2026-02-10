@@ -15,11 +15,9 @@ const fadeUp: Variants = {
 export default function EngineeringPage() {
   return (
     <main className="bg-white">
-
       {/* ================= HERO ================= */}
       <section className="relative pt-[110px] pb-20 bg-[#F7F8FC]">
         <div className="max-w-6xl mx-auto px-6">
-
           <motion.h1
             variants={fadeUp}
             initial="hidden"
@@ -60,151 +58,145 @@ export default function EngineeringPage() {
             transition={{ delay: 0.2 }}
             className="max-w-4xl text-[17px] leading-[1.85] text-slate-600"
           >
-            Mega infrastructure boom - highways, bridges, tunnels, metro rail networks, hydroelectric plants, smart cities, green buildings, PropTech revolution, and sustainable construction practices transforming how we build nations.
+            Mega infrastructure boom - highways, bridges, tunnels, metro rail
+            networks, hydroelectric plants, smart cities, green buildings,
+            PropTech revolution, and sustainable construction practices
+            transforming how we build nations.
           </motion.p>
-
         </div>
       </section>
 
       {/* ================= RISKS ================= */}
-        <section className="max-w-6xl mx-auto px-6 py-24">
+      <section className="max-w-6xl mx-auto px-6 py-24">
         <motion.h2
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-[#1C2A7D] mb-12"
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-[#1C2A7D] mb-12"
         >
-            Construction & Infrastructure Risks
+          Construction & Infrastructure Risks
         </motion.h2>
 
         <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
         >
-            {[
+          {[
             {
-                title: "Contractor’s All Risk",
-                desc:
-                "Structural collapse, equipment damage, third-party injury, and construction defects.",
-                image: "/engineering/contractor-risk.jpg",
+              title: "Contractor’s All Risk",
+              desc: "Structural collapse, equipment damage, third-party injury, and construction defects.",
+              image: "/engineering/e1.jpeg",
             },
             {
-                title: "Professional Indemnity",
-                desc:
-                "Design errors, engineering failures, specification mistakes, and project management negligence.",
-                image: "/engineering/professional-indemnity.jpg",
+              title: "Professional Indemnity",
+              desc: "Design errors, engineering failures, specification mistakes, and project management negligence.",
+              image: "/engineering/e2.jpeg",
             },
             {
-                title: "Delay in Start-Up",
-                desc:
-                "Weather disruptions, contractor default, supply chain failures, and permit delays.",
-                image: "/engineering/delay-startup.jpg",
+              title: "Delay in Start-Up",
+              desc: "Weather disruptions, contractor default, supply chain failures, and permit delays.",
+              image: "/engineering/e3.jpeg",
             },
             {
-                title: "Structural Warranty",
-                desc:
-                "Post-completion defects, foundation failures, envelope issues, and latent defects.",
-                image: "/engineering/structural-warranty.jpg",
+              title: "Structural Warranty",
+              desc: "Post-completion defects, foundation failures, envelope issues, and latent defects.",
+              image: "/engineering/e4.jpeg",
             },
             {
-                title: "Environmental Liability",
-                desc:
-                "Soil contamination, hazardous materials, pollution incidents, and remediation costs.",
-                image: "/engineering/environmental-liability.jpg",
+              title: "Environmental Liability",
+              desc: "Soil contamination, hazardous materials, pollution incidents, and remediation costs.",
+              image: "/engineering/e5.jpeg",
             },
             {
-                title: "Surety Bonds",
-                desc:
-                "Performance bonds, payment bonds, bid bonds, and contract completion guarantees.",
-                image: "/engineering/surety-bonds.jpg",
+              title: "Surety Bonds",
+              desc: "Performance bonds, payment bonds, bid bonds, and contract completion guarantees.",
+              image: "/engineering/e6.jpeg",
             },
-            ].map((item) => (
+          ].map((item) => (
             <motion.div
-                key={item.title}
-                variants={fadeUp}
-                whileHover={{ y: -10, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 220, damping: 18 }}
-                className="bg-white rounded-2xl overflow-hidden
+              key={item.title}
+              variants={fadeUp}
+              whileHover={{ y: -10, scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 220, damping: 18 }}
+              className="bg-white rounded-2xl overflow-hidden
                         border border-[#1C2A7D]/10
                         shadow-[0_12px_35px_rgba(28,42,125,0.15)]
                         hover:shadow-[0_28px_60px_rgba(28,42,125,0.3)]
                         transition"
             >
-                {/* IMAGE */}
-                <div className="relative h-44 w-full">
+              {/* IMAGE */}
+              <div className="relative w-full">
                 <img
-                    src={item.image}
-                    alt={item.title}
-                    className="h-full w-full object-cover"
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-auto object-contain"
                 />
-                <div className="absolute inset-0 bg-[#1C2A7D]/10" />
-                </div>
+              </div>
 
-                {/* CONTENT */}
-                <div className="p-6">
+              {/* CONTENT */}
+              <div className="p-6">
                 <h3 className="text-lg font-semibold text-[#1C2A7D] mb-3">
-                    {item.title}
+                  {item.title}
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                    {item.desc}
+                  {item.desc}
                 </p>
-                </div>
+              </div>
 
-                {/* ACCENT BAR */}
-                <div className="h-1 w-full bg-[#E8D534]" />
+              {/* ACCENT BAR */}
+              <div className="h-1 w-full bg-[#E8D534]" />
             </motion.div>
-            ))}
+          ))}
         </motion.div>
-        </section>
+      </section>
 
-        {/* ================= METRICS (Modern Cards) ================= */}
-        <section className="bg-[#F7F8FC] py-28">
+      {/* ================= METRICS (Modern Cards) ================= */}
+      <section className="bg-[#F7F8FC] py-28">
         <div className="max-w-7xl mx-auto px-6">
-
-            <motion.h2
+          <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#1C2A7D] mb-16 text-center"
-            >
+          >
             Comprehensive Infrastructure Protection
-            </motion.h2>
+          </motion.h2>
 
-            <motion.div
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
             className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-10"
-            >
+          >
             {[
-                {
+              {
                 value: "$12B",
                 label: "Average Project Value",
                 desc: "Mega infrastructure and long-duration construction programs",
-                },
-                {
+              },
+              {
                 value: "156 Days",
                 label: "Delay Risk – DSU Critical",
                 desc: "Projects exposed to weather, approvals, and contractor risks",
-                },
-                {
+              },
+              {
                 value: "99.8%",
                 label: "Completion Rate",
                 desc: "Achieved with structured surety bond programs",
-                },
-                {
+              },
+              {
                 value: "$890M",
                 label: "Defect Claims Covered",
                 desc: "Post-completion structural and warranty claims",
-                },
+              },
             ].map((item) => (
-                <motion.div
+              <motion.div
                 key={item.label}
                 variants={fadeUp}
                 whileHover={{ y: -8 }}
@@ -214,47 +206,47 @@ export default function EngineeringPage() {
                             shadow-[0_18px_45px_rgba(28,42,125,0.12)]
                             hover:shadow-[0_28px_65px_rgba(28,42,125,0.2)]
                             transition"
-                >
+              >
                 {/* CIRCLE */}
                 <div className="relative w-24 h-24 mx-auto mb-6">
-                    {/* arc */}
-                    <svg viewBox="0 0 100 100" className="w-full h-full">
+                  {/* arc */}
+                  <svg viewBox="0 0 100 100" className="w-full h-full">
                     <circle
-                        cx="50"
-                        cy="50"
-                        r="44"
-                        fill="none"
-                        stroke="#E8D534"
-                        strokeWidth="6"
-                        strokeDasharray="210 80"
-                        strokeLinecap="round"
+                      cx="50"
+                      cy="50"
+                      r="44"
+                      fill="none"
+                      stroke="#E8D534"
+                      strokeWidth="6"
+                      strokeDasharray="210 80"
+                      strokeLinecap="round"
                     />
-                    </svg>
+                  </svg>
 
-                    {/* dot */}
-                    <div className="absolute top-2 right-3 w-3 h-3 rounded-full bg-[#1C2A7D]" />
+                  {/* dot */}
+                  <div className="absolute top-2 right-3 w-3 h-3 rounded-full bg-[#1C2A7D]" />
 
-                    {/* value */}
-                    <div className="absolute inset-0 flex items-center justify-center text-center">
-                        <span className="text-[20px] leading-tight font-extrabold text-[#1C2A7D]">
-                            {item.value}
-                        </span>
-                    </div>
+                  {/* value */}
+                  <div className="absolute inset-0 flex items-center justify-center text-center">
+                    <span className="text-[20px] leading-tight font-extrabold text-[#1C2A7D]">
+                      {item.value}
+                    </span>
+                  </div>
                 </div>
 
                 {/* TEXT */}
                 <h3 className="text-sm font-semibold text-[#1C2A7D] text-center mb-2">
-                    {item.label}
+                  {item.label}
                 </h3>
 
                 <p className="text-sm text-slate-600 text-center leading-relaxed">
-                    {item.desc}
+                  {item.desc}
                 </p>
-                </motion.div>
+              </motion.div>
             ))}
-            </motion.div>
+          </motion.div>
         </div>
-        </section>
+      </section>
     </main>
   );
 }

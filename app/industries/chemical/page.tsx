@@ -12,12 +12,14 @@ const fadeUp: Variants = {
   },
 };
 
-export default function ShippingPage() {
+export default function ChemicalPage() {
   return (
     <main className="bg-white">
+
       {/* ================= HERO ================= */}
       <section className="relative pt-[110px] pb-20 bg-[#F7F8FC]">
         <div className="max-w-6xl mx-auto px-6">
+
           <motion.h1
             variants={fadeUp}
             initial="hidden"
@@ -25,7 +27,7 @@ export default function ShippingPage() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D]"
           >
-            Powering Global Trade & Energy
+            Chemical & Pharmaceutical Insurance Solutions
           </motion.h1>
 
           <motion.p
@@ -36,7 +38,7 @@ export default function ShippingPage() {
             transition={{ delay: 0.1 }}
             className="mt-3 text-2xl font-semibold text-[#1C2A7D]"
           >
-            Maritime Infrastructure Expansion
+            Innovating Life Sciences
           </motion.p>
 
           <motion.div
@@ -55,11 +57,12 @@ export default function ShippingPage() {
             transition={{ delay: 0.2 }}
             className="max-w-4xl text-[17px] leading-[1.85] text-slate-600"
           >
-            Global trade growth, mega-port development, offshore renewable
-            energy, deep-sea exploration, automated port operations, green
-            shipping initiatives, and offshore wind farms are transforming
-            maritime and energy sectors worldwide.
+            Biopharmaceutical breakthroughs, personalized medicine, green
+            chemistry initiatives, regulatory harmonization, contract
+            manufacturing growth, and specialty chemical demand are reshaping
+            the global life sciences sector.
           </motion.p>
+
         </div>
       </section>
 
@@ -72,7 +75,7 @@ export default function ShippingPage() {
           viewport={{ once: true }}
           className="text-3xl font-bold text-[#1C2A7D] mb-12"
         >
-          Marine & Offshore Risks
+          Pharma & Chemical Risks
         </motion.h2>
 
         <motion.div
@@ -80,77 +83,50 @@ export default function ShippingPage() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
           {[
             {
-              title: "Port Operators Liability",
-              desc: "Cargo handling damage, vessel collision, stevedore injury, terminal operations.",
-              image: "/shipping/s1.jpeg",
+              title: "Product Recall",
+              desc: "Contamination, efficacy failures, adverse reactions, batch withdrawals.",
             },
             {
-              title: "Offshore Energy Risks",
-              desc: "Platform damage, blowouts, environmental spills, equipment failure.",
-              image: "/shipping/s2.jpeg",
+              title: "Environmental Liability",
+              desc: "Chemical spills, air emissions, groundwater contamination, cleanup costs.",
             },
             {
-              title: "Marine Cargo Insurance",
-              desc: "Goods in transit, loading & unloading damage, theft, weather perils.",
-              image: "/shipping/s3.jpeg",
+              title: "Product Liability",
+              desc: "Patient injury, side effects, manufacturing defects, labeling errors.",
             },
             {
-              title: "Marine Pollution Liability",
-              desc: "Oil spills, environmental cleanup, regulatory fines, ecological damage.",
-              image: "/shipping/s4.jpeg",
+              title: "Business Interruption",
+              desc: "Production stoppages, supply chain disruptions, regulatory shutdowns.",
             },
             {
-              title: "Offshore Construction",
-              desc: "Installation risks, weather delays, subsea operations, vessel damage.",
-              image: "/shipping/s5.jpeg",
+              title: "Clinical Trial Risks",
+              desc: "Participant injury, trial failures, protocol violations, data integrity issues.",
             },
             {
-              title: "Loss of Hire",
-              desc: "Vessel downtime, port closures, operational disruptions, revenue loss.",
-              image: "/shipping/s6.jpeg",
+              title: "Cyber & IP Theft",
+              desc: "Formula theft, research data breaches, patent infringement risks.",
             },
           ].map((item) => (
             <motion.div
               key={item.title}
               variants={fadeUp}
-              whileHover={{ y: -8 }}
-              transition={{ type: "spring", stiffness: 220, damping: 18 }}
-              className="bg-white rounded-2xl overflow-hidden
+              className="bg-[#F9FAFD]
                          border border-[#1C2A7D]/10
-                         shadow-[0_14px_35px_rgba(28,42,125,0.14)]
-                         hover:shadow-[0_28px_60px_rgba(28,42,125,0.25)]
+                         rounded-2xl p-6
+                         hover:border-[#E8D534]
+                         hover:shadow-[0_20px_40px_rgba(28,42,125,0.12)]
                          transition"
             >
-              {/* IMAGE */}
-              <div className="relative w-full bg-[#F7F8FC] flex items-center justify-center p-4">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="
-      w-full
-      h-auto
-      object-contain
-      transition-transform
-      duration-500
-      group-hover:scale-[1.03]
-    "
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-[#1C2A7D] mb-2">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-
-              <div className="h-1 w-full bg-[#E8D534]" />
+              <h3 className="text-lg font-semibold text-[#1C2A7D] mb-2">
+                {item.title}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </motion.div>
@@ -159,6 +135,7 @@ export default function ShippingPage() {
       {/* ================= METRICS ================= */}
       <section className="bg-[#F7F8FC] py-28">
         <div className="max-w-6xl mx-auto px-6">
+
           <motion.h2
             variants={fadeUp}
             initial="hidden"
@@ -166,7 +143,7 @@ export default function ShippingPage() {
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#1C2A7D] mb-16 text-center"
           >
-            Comprehensive Marine Protection
+            Specialized Pharma Coverage
           </motion.h2>
 
           <motion.div
@@ -177,22 +154,24 @@ export default function ShippingPage() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
           >
             {[
-              { value: "$4.8B", label: "Port Capacity Coverage" },
-              { value: "24/7", label: "Continuous Operations Risk" },
-              { value: "$2.1B", label: "Offshore Asset Protection" },
-              { value: "98%", label: "Uptime for Business Continuity" },
+              { value: "$3.2B", label: "Average Recall Cost" },
+              { value: "87%", label: "Cyber Target Rate" },
+              { value: "$450M", label: "Cleanup Costs" },
+              { value: "12-Year", label: "Development" },
             ].map((stat) => (
               <motion.div
                 key={stat.label}
                 variants={fadeUp}
-                whileHover={{ y: -6 }}
+                whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
-                className="bg-white rounded-3xl p-8 text-center
+                className="bg-white rounded-3xl px-8 py-10
                            border border-[#1C2A7D]/10
-                           shadow-[0_18px_45px_rgba(28,42,125,0.12)]"
+                           shadow-[0_18px_45px_rgba(28,42,125,0.12)]
+                           hover:shadow-[0_28px_65px_rgba(28,42,125,0.2)]
+                           transition text-center"
               >
-                <div className="relative w-28 h-28 mx-auto mb-4">
-                  {/* ARC */}
+                {/* MODERN ARC */}
+                <div className="relative w-28 h-28 mx-auto mb-5">
                   <svg viewBox="0 0 100 100" className="w-full h-full">
                     <circle
                       cx="50"
@@ -206,10 +185,8 @@ export default function ShippingPage() {
                     />
                   </svg>
 
-                  {/* DOT */}
                   <div className="absolute top-2 right-5 w-3 h-3 rounded-full bg-[#1C2A7D]" />
 
-                  {/* VALUE */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-xl font-extrabold text-[#1C2A7D]">
                       {stat.value}
@@ -217,7 +194,7 @@ export default function ShippingPage() {
                   </div>
                 </div>
 
-                <p className="mt-5 text-sm text-slate-600 font-medium">
+                <p className="text-sm font-medium text-slate-600">
                   {stat.label}
                 </p>
               </motion.div>
@@ -225,14 +202,15 @@ export default function ShippingPage() {
           </motion.div>
 
           <p className="mt-16 max-w-5xl mx-auto text-center text-slate-600 leading-relaxed">
-            Complete protection including Port Operators Liability, Marine Cargo
-            Insurance, Offshore Energy Packages, Marine Pollution Liability,
-            Protection & Indemnity (P&I), Hull & Machinery, and Loss of Hire
-            coverage for ports, terminals, offshore platforms, and maritime
-            operations.
+            Comprehensive protection including Product Liability, Business
+            Interruption, Professional Indemnity, Clinical Trial Insurance,
+            Environmental Liability, Cyber Risk, and Regulatory Defense coverage
+            across pharmaceutical and chemical operations.
           </p>
+
         </div>
       </section>
+
     </main>
   );
 }

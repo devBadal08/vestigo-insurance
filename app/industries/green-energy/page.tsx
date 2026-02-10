@@ -12,14 +12,12 @@ const fadeUp: Variants = {
   },
 };
 
-export default function EcommercePage() {
+export default function GreenEnergyPage() {
   return (
     <main className="bg-white">
-
       {/* ================= HERO ================= */}
       <section className="relative pt-[110px] pb-20 bg-[#F7F8FC]">
         <div className="max-w-6xl mx-auto px-6">
-
           <motion.h1
             variants={fadeUp}
             initial="hidden"
@@ -27,7 +25,7 @@ export default function EcommercePage() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D]"
           >
-            Revolutionizing Retail Delivery
+            Energizing Sustainable Futures
           </motion.h1>
 
           <motion.p
@@ -38,7 +36,7 @@ export default function EcommercePage() {
             transition={{ delay: 0.1 }}
             className="mt-3 text-2xl font-semibold text-[#1C2A7D]"
           >
-            The Speed Commerce Era
+            Clean Energy Transition
           </motion.p>
 
           <motion.div
@@ -57,15 +55,15 @@ export default function EcommercePage() {
             transition={{ delay: 0.2 }}
             className="max-w-4xl text-[17px] leading-[1.85] text-slate-600"
           >
-            10-minute delivery models, dark store networks, hyperlocal fulfilment,
-            AI-powered personalization, social commerce explosion, and seamless
-            omnichannel experiences are redefining consumer expectations globally.
+            Renewable energy integration is accelerating. Grid modernization is
+            becoming critical. Energy storage solutions are emerging while
+            regulatory pressure and decarbonization commitments are driving
+            massive infrastructure investments globally.
           </motion.p>
-
         </div>
       </section>
 
-      {/* ================= RISKS ================= */}
+      {/* ================= ENERGY SECTOR RISKS ================= */}
       <section className="max-w-6xl mx-auto px-6 py-24">
         <motion.h2
           variants={fadeUp}
@@ -74,7 +72,7 @@ export default function EcommercePage() {
           viewport={{ once: true }}
           className="text-3xl font-bold text-[#1C2A7D] mb-12"
         >
-          Digital Commerce Risks
+          Energy Sector Risks
         </motion.h2>
 
         <motion.div
@@ -86,28 +84,28 @@ export default function EcommercePage() {
         >
           {[
             {
-              title: "Cyber & Data Breaches",
-              desc: "Customer data theft, payment fraud, ransomware, GDPR violations.",
+              title: "Property Damage & Business Interruption",
+              desc: "Power plant fires, equipment failure, natural disasters, grid failures.",
             },
             {
-              title: "Product Liability",
-              desc: "Defective products, counterfeit goods, safety violations, recall costs.",
+              title: "Environmental Liability",
+              desc: "Pollution incidents, contamination, cleanup costs, regulatory fines.",
             },
             {
-              title: "Logistics & Transit",
-              desc: "Last-mile delivery failures, goods damage, theft, vehicle accidents.",
+              title: "Construction All Risk",
+              desc: "Renewable project delays, installation damage, weather disruptions.",
             },
             {
-              title: "Business Interruption",
-              desc: "Platform downtime, server crashes, payment gateway failures, peak season disruptions.",
+              title: "Cyber & Smart Grid",
+              desc: "System breaches, SCADA attacks, grid disruptions, data theft.",
             },
             {
-              title: "Professional Indemnity",
-              desc: "Mis-selling, wrong product delivery, pricing errors, service failures.",
+              title: "Renewable Energy Risks",
+              desc: "Solar panel damage, wind turbine failure, performance guarantees.",
             },
             {
-              title: "Warehouse Operations",
-              desc: "Fire, inventory loss, equipment breakdown, worker injuries.",
+              title: "Regulatory & Compliance",
+              desc: "License violations, safety breaches, investigation costs.",
             },
           ].map((item) => (
             <motion.div
@@ -123,86 +121,101 @@ export default function EcommercePage() {
               <h3 className="text-lg font-semibold text-[#1C2A7D] mb-2">
                 {item.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">
-                {item.desc}
-              </p>
+              <p className="text-slate-600 leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </motion.div>
       </section>
 
-      {/* ================= PROTECTION ================= */}
-        <section className="bg-[#F7F8FC] py-24">
+      {/* ================= POWER SECTOR PROTECTION ================= */}
+      <section className="bg-[#F7F8FC] py-24">
         <div className="max-w-6xl mx-auto px-6">
-
-            <motion.h2
+          <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#1C2A7D] mb-14"
-            >
-            E-Commerce Protection Suite
-            </motion.h2>
+          >
+            Power Sector Protection
+          </motion.h2>
 
-            <motion.div
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
             {[
-                {
-                title: "Cyber Liability & Data Breach",
-                desc: "Protection against customer data theft, payment fraud, ransomware attacks, and regulatory penalties.",
-                },
-                {
-                title: "Product Liability Insurance",
-                desc: "Covers defective products, counterfeit goods, safety issues, recalls, and consumer injury claims.",
-                },
-                {
-                title: "Marine & Transit Coverage",
-                desc: "Safeguards goods in transit against loss, theft, damage, and logistics-related disruptions.",
-                },
-                {
-                title: "Business Interruption Insurance",
-                desc: "Compensation for revenue loss due to platform downtime, server failures, or operational shutdowns.",
-                },
-                {
-                title: "Professional Indemnity",
-                desc: "Protection from claims arising due to mis-selling, pricing errors, service failures, or disputes.",
-                },
-                {
-                title: "Property & Stock Insurance",
-                desc: "Covers warehouses, inventory, dark stores, and fulfilment centres against fire, theft, and damage.",
-                },
+              {
+                title: "Property & Business Interruption",
+                image: "/energy/e1.jpeg",
+              },
+              {
+                title: "Environmental Liability",
+                image: "/energy/e2.jpeg",
+              },
+              {
+                title: "CAR for Renewable Projects",
+                image: "/energy/e3.jpeg",
+              },
+              {
+                title: "Cyber & Smart Grid Protection",
+                image: "/energy/e4.jpeg",
+              },
+              {
+                title: "Renewable Energy Insurance",
+                image: "/energy/e5.jpeg",
+              },
+              {
+                title: "Regulatory Defense",
+                image: "/energy/e6.jpeg",
+              },
             ].map((item) => (
-                <motion.div
+              <motion.div
                 key={item.title}
                 variants={fadeUp}
-                whileHover={{ y: -6 }}
+                whileHover={{ y: -8 }}
                 transition={{ type: "spring", stiffness: 220, damping: 18 }}
-                className="bg-white rounded-2xl px-7 py-7
-                            border border-[#1C2A7D]/10
-                            shadow-[0_14px_35px_rgba(28,42,125,0.12)]
-                            hover:shadow-[0_24px_55px_rgba(28,42,125,0.2)]
-                            transition"
+                className="group bg-white rounded-2xl overflow-hidden
+                  flex flex-col
+                  border border-[#1C2A7D]/10
+                  shadow-[0_14px_35px_rgba(28,42,125,0.14)]
+                  hover:shadow-[0_28px_60px_rgba(28,42,125,0.25)]
+                  transition"
+              >
+                {/* IMAGE */}
+                <div
+                  className="w-full min-h-[200px] bg-[#F7F8FC]
+                flex items-center justify-center p-4"
                 >
-                <h3 className="font-semibold text-[#1C2A7D] text-lg mb-2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="
+      max-h-[200px]
+      w-auto
+      object-contain
+      transition-transform
+      duration-500
+      group-hover:scale-[1.03]
+    "
+                  />
+                </div>
+
+                <div className="p-6 mt-auto">
+                  <h3 className="text-lg font-semibold text-[#1C2A7D] text-center">
                     {item.title}
-                </h3>
+                  </h3>
+                </div>
 
-                <p className="text-sm text-slate-600 leading-relaxed">
-                    {item.desc}
-                </p>
-                </motion.div>
+                <div className="h-1 w-full bg-[#E8D534]" />
+              </motion.div>
             ))}
-            </motion.div>
-
+          </motion.div>
         </div>
-        </section>
-
+      </section>
     </main>
   );
 }

@@ -1,14 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const quickLinks = [
+  { label: "Corporate", href: "/corporate" },
+  { label: "Solutions", href: "/solutions" },
+  { label: "Industries", href: "/industries" },
+  { label: "Insights", href: "/blogs" },
+  { label: "Careers", href: "/career" },
+  { label: "Contact Us", href: "/contact-us" },
+];
+
 export default function Footer() {
   return (
     <footer className="relative bg-gradient-to-b from-[#0F172A] to-[#020617] text-slate-200">
-
       {/* TOP GRID */}
-      <div className="max-w-7xl mx-auto px-6 py-20
-                      grid grid-cols-1 md:grid-cols-3 gap-14">
-
+      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-14">
         {/* BRAND */}
         <div className="space-y-4">
           <Image
@@ -19,8 +25,7 @@ export default function Footer() {
           />
 
           <p className="text-sm leading-relaxed text-slate-400 max-w-sm">
-            Independent insurance advisory firm delivering
-            clarity, foresight, and confidence in risk management.
+            Simplifying Insurance, Amplifying Trust
           </p>
 
           <p className="text-xs tracking-wide text-slate-500">
@@ -30,24 +35,16 @@ export default function Footer() {
 
         {/* QUICK LINKS */}
         <div>
-          <h4 className="text-white font-semibold text-lg mb-6">
-            Quick Links
-          </h4>
+          <h4 className="text-white font-semibold text-lg mb-6">Quick Links</h4>
 
           <ul className="space-y-3 text-sm">
-            {[
-              "Corporate",
-              "Solutions",
-              "Industries",
-              "Insights",
-              "Contact Us",
-            ].map((item) => (
-              <li key={item}>
+            {quickLinks.map((item) => (
+              <li key={item.label}>
                 <Link
-                  href="#"
+                  href={item.href}
                   className="text-slate-400 hover:text-white transition"
                 >
-                  {item}
+                  {item.label}
                 </Link>
               </li>
             ))}
@@ -56,25 +53,30 @@ export default function Footer() {
 
         {/* CONTACT */}
         <div>
-          <h4 className="text-white font-semibold text-lg mb-6">
-            Contact
-          </h4>
+          <h4 className="text-white font-semibold text-lg mb-6">Contact</h4>
 
           <div className="space-y-4 text-sm">
-
             <div className="flex items-start gap-3">
               <span className="text-[#E8D534] text-lg">📞</span>
               <p className="text-slate-400 leading-relaxed">
-                +91 97261 60360 <br />
-                +91 97378 01385
+                <a href="tel:+919726160360" className="hover:text-white">
+                  +91 97261 60360
+                </a>
+                <br />
+                <a href="tel:+919737801385" className="hover:text-white">
+                  +91 97378 01385
+                </a>
               </p>
             </div>
 
             <div className="flex items-start gap-3">
               <span className="text-[#E8D534] text-lg">✉️</span>
-              <p className="text-slate-400">
+              <a
+                href="mailto:info@vestigoinsurance.com"
+                className="text-slate-400 hover:text-white"
+              >
                 info@vestigoinsurance.com
-              </p>
+              </a>
             </div>
 
             <div className="flex items-start gap-3">
@@ -84,7 +86,6 @@ export default function Footer() {
                 Siddhpur · Mumbai
               </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -93,20 +94,12 @@ export default function Footer() {
       <div className="border-t border-white/10" />
 
       {/* BOTTOM BAR */}
-      <div className="max-w-7xl mx-auto px-6 py-6
-                      flex flex-col sm:flex-row
-                      items-center justify-between
-                      text-xs text-slate-500 gap-4">
-
-        <p>
-          © 2026 Vestigo Insurance Advisor. All rights reserved.
-        </p>
+      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 Vestigo Insurance Advisor. All rights reserved.</p>
 
         <p>
           Designed by{" "}
-          <span className="text-slate-300 font-medium">
-            TechStrota
-          </span>
+          <span className="text-slate-300 font-medium">TechStrota</span>
         </p>
       </div>
     </footer>

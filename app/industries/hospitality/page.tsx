@@ -23,11 +23,9 @@ const fadeUp: Variants = {
 export default function HospitalityPage() {
   return (
     <main className="bg-white">
-
       {/* ================= HERO ================= */}
       <section className="relative pt-[110px] pb-24 bg-[#F7F8FC]">
         <div className="max-w-6xl mx-auto px-6">
-
           <motion.h1
             variants={fadeUp}
             initial="hidden"
@@ -35,10 +33,8 @@ export default function HospitalityPage() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-extrabold text-[#1C2A7D]"
           >
-            <span className="bg-[#E8D534]/40 px-2 rounded">
-              Hospitality
-            </span>{" "}
-            & Tourism Insurance Solutions
+            <span className="bg-[#E8D534]/40 px-2 rounded">Hospitality</span> &
+            Tourism Insurance Solutions
           </motion.h1>
 
           <motion.p
@@ -66,11 +62,11 @@ export default function HospitalityPage() {
             transition={{ delay: 0.2 }}
             className="max-w-4xl text-[17px] leading-[1.85] text-slate-600"
           >
-            Post-pandemic recovery surge, experiential travel boom, boutique hospitality
-            growth, technology-enabled service, sustainability focus, and wellness
-            tourism are transforming the hospitality landscape.
+            Post-pandemic recovery surge, experiential travel boom, boutique
+            hospitality growth, technology-enabled service, sustainability
+            focus, and wellness tourism are transforming the hospitality
+            landscape.
           </motion.p>
-
         </div>
       </section>
 
@@ -160,54 +156,53 @@ export default function HospitalityPage() {
         </motion.div>
       </section>
 
-        {/* ================= COVERAGE ================= */}
-        <section className="bg-[#F7F8FC] py-28">
+      {/* ================= COVERAGE ================= */}
+      <section className="bg-[#F7F8FC] py-28">
         <div className="max-w-7xl mx-auto px-6">
-
-            <motion.h2
+          <motion.h2
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             className="text-3xl font-bold text-[#1C2A7D] mb-16 text-center"
-            >
+          >
             Complete Hospitality Coverage
-            </motion.h2>
+          </motion.h2>
 
-            <motion.div
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
-            >
+          >
             {[
-                {
+              {
                 title: "Property & Business Interruption",
-                image: "/hospitality/property.jpg",
-                },
-                {
+                image: "/hospitality/h1.jpeg",
+              },
+              {
                 title: "General & Product Liability",
-                image: "/hospitality/liability.jpg",
-                },
-                {
+                image: "/hospitality/h2.jpeg",
+              },
+              {
                 title: "Cyber & Data Protection",
-                image: "/hospitality/cyber.jpg",
-                },
-                {
+                image: "/hospitality/h3.jpeg",
+              },
+              {
                 title: "Liquor Liability",
-                image: "/hospitality/liquor.jpg",
-                },
-                {
+                image: "/hospitality/h4.jpeg",
+              },
+              {
                 title: "Workers Compensation",
-                image: "/hospitality/workers.jpg",
-                },
-                {
+                image: "/hospitality/h5.jpeg",
+              },
+              {
                 title: "Equipment Breakdown",
-                image: "/hospitality/equipment.jpg",
-                },
+                image: "/hospitality/h6.jpeg",
+              },
             ].map((item) => (
-                <motion.div
+              <motion.div
                 key={item.title}
                 variants={fadeUp}
                 whileHover={{ y: -10, scale: 1.03 }}
@@ -217,31 +212,34 @@ export default function HospitalityPage() {
                             shadow-[0_18px_45px_rgba(28,42,125,0.14)]
                             hover:shadow-[0_30px_70px_rgba(28,42,125,0.25)]
                             transition"
-                >
+              >
                 {/* IMAGE */}
-                <div className="relative h-40 w-full overflow-hidden">
-                    <img
+                <div className="relative w-full bg-[#F7F8FC] flex items-center justify-center p-4">
+                  <img
                     src={item.image}
                     alt={item.title}
-                    className="h-full w-full object-cover
-                                group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-[#1C2A7D]/20" />
+                    className="
+      w-full
+      h-auto
+      object-contain
+      transition-transform
+      duration-500
+      group-hover:scale-[1.03]
+    "
+                  />
                 </div>
 
                 {/* CONTENT */}
                 <div className="p-7 text-center">
-                <h3 className="font-semibold text-[#1C2A7D] text-lg">
+                  <h3 className="font-semibold text-[#1C2A7D] text-lg">
                     {item.title}
-                </h3>
+                  </h3>
                 </div>
-                </motion.div>
+              </motion.div>
             ))}
-            </motion.div>
-
+          </motion.div>
         </div>
-        </section>
-
+      </section>
     </main>
   );
 }
